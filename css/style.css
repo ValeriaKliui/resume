@@ -15,19 +15,16 @@ html {
     box-sizing: inherit;
 }
 
-ul {
+.list {
     list-style-type: none;
+    padding-left: 0;
 }
 
-a {
+.link {
     text-decoration: none;
     color: inherit;
 }
 
-path {
-    fill: inherit;
-    stroke: inherit;
-}
 
 .resume-page {
     width: 70%;
@@ -36,16 +33,19 @@ path {
     box-shadow: 5px 5px 20px #6a4f57;
     display: flex;
     font-family: "Verdana";
+    font-size: 0.9em;
 }
-.title {
-    font-size: 1em;
-}
-.text {
-    font-size: 0.8em;
+
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .profile__info {
     border-bottom: 1px solid #6a4f57;
+    margin-bottom: 7px;
 }
 
 .profile__photo {
@@ -58,23 +58,44 @@ path {
     text-transform: uppercase;
 }
 
+.title {
+    font-size: 1em;
+    margin: 5px 0;
+}
+.subtitle {
+    font-size: 0.9em;
+    color: rgb(140, 79, 87);
+}
+.text_bold {
+    font-weight: 600;
+}
 .profile__name {
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.contacts__list {
-    padding-left: 0;
-}
 .contacts__item {
     display: flex;
     gap: .5rem;
+    align-items: center;
 }
+
+.contacts__item+.contacts__item {
+    margin-top: 10px;
+}
+
+.contacts__text {
+    margin: 0;
+}
+
 .icon {
     fill: #6a4f57a9;
     transition: 0.2s all;
 }
+
 /* TODO: hover icons */
 .icon:hover {
     fill: #6a4f57;
 }
+
+
