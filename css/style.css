@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Verdana";
+    src: url("/assets/fonts/Verdana.ttf");
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+path {
+    fill: inherit;
+    stroke: inherit;
+}
+
+.resume-page {
+    width: 70%;
+    margin: 5% auto;
+    padding: 50px;
+    box-shadow: 5px 5px 20px #6a4f57;
+    display: flex;
+    font-family: "Verdana";
+}
+.title {
+    font-size: 1em;
+}
+.text {
+    font-size: 0.8em;
+}
+
+.profile__info {
+    border-bottom: 1px solid #6a4f57;
+}
+
+.profile__photo {
+    border-radius: 100px;
+}
+
+.profile__name,
+.profile__profession,
+.title {
+    text-transform: uppercase;
+}
+
+.profile__name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contacts__list {
+    padding-left: 0;
+}
+.contacts__item {
+    display: flex;
+    gap: .5rem;
+}
+.icon {
+    fill: #6a4f57a9;
+    transition: 0.2s all;
+}
+/* TODO: hover icons */
+.icon:hover {
+    fill: #6a4f57;
+}
