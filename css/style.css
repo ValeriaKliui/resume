@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Verdana";
-    src: url("/assets/fonts/Verdana.ttf");
+    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    src: url("/assets/fonts/Segoe UI.ttf");
 }
 
 html {
@@ -32,7 +32,7 @@ html {
     padding: 50px;
     box-shadow: 5px 5px 20px #6a4f57;
     display: flex;
-    font-family: "Verdana";
+    font-family: "Segoe UI";
     font-size: 0.9em;
 }
 
@@ -62,13 +62,16 @@ html {
     font-size: 1em;
     margin: 5px 0;
 }
+
 .subtitle {
     font-size: 0.9em;
-    color: rgb(140, 79, 87);
+    color: #8c4f57;
 }
+
 .text_bold {
     font-weight: 600;
 }
+
 .profile__name {
     font-size: 1.2em;
     font-weight: 600;
@@ -98,4 +101,13 @@ html {
     fill: #6a4f57;
 }
 
-
+.status-bar {
+    width: 50%;
+    height: 7px;
+    background-color: #6a4f5739;
+}
+.status-bar__procents {
+    height: 7px;
+    background-color: #6a4f57a9;
+    display: block;
+}
