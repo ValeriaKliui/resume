@@ -27,11 +27,12 @@ html {
 
 
 .resume-page {
-    width: 70%;
+    width: 60%;
     margin: 5% auto;
     padding: 50px;
     box-shadow: 5px 5px 20px #6a4f57;
     display: flex;
+    gap: 8%;
     font-family: "Segoe UI";
     font-size: 0.9em;
 }
@@ -64,7 +65,6 @@ html {
 .title {
     font-size: 1em;
     margin: 5px 0;
-    font-weight: ;
 }
 
 .subtitle {
@@ -127,7 +127,13 @@ html {
     display: block;
 }
 
-.grid {
+.experience__table {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
+}
+.experience__place_text {
+    margin-top: 0;
+}
+.experience__title {
+    margin-bottom: 13px;
 }
