@@ -7,6 +7,8 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: "Segoe UI";
+    font-size: 1em;
 }
 
 *,
@@ -33,10 +35,15 @@ html {
     box-shadow: 5px 5px 20px #6a4f57;
     display: flex;
     gap: 8%;
-    font-family: "Segoe UI";
-    font-size: 0.9em;
 }
 
+.navigation__list {
+    display: flex;
+    justify-content: center;
+}
+.navigation__item + .navigation__item {
+    margin-left: 2%;
+}
 
 .personal-info {
     display: flex;

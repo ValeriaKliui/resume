@@ -11,8 +11,48 @@
 </head>
 
 <body>
+    <header class="header">
+        <nav class="navigation">
+            <ul class="navigation__list list">
+                <li class="navigation__item">
+                    <p class="text">
+                        <a href="#about_me" class="link">
+                            About me
+                        </a>
+                    </p>
+                </li>
+                <li class="navigation__item">
+                    <p class="text">
+                        <a href="#contacts" class="link">
+                            Contacts
+                        </a>
+                    </p>
+                </li>
+                <li class="navigation__item">
+                    <p class="text">
+                        <a href="#education" class="link">
+                            Education
+                        </a>
+                    </p>
+                </li>
+                <li class="navigation__item">
+                    <p class="text">
+                        <a href="#knowledges" class="link">
+                            Knowledges </a>
+                    </p>
+                </li>
+                <li class="navigation__item">
+                    <p class="text">
+                        <a href="#experience" class="link">
+                            Experience
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="resume-page">
-        <div class="personal-info">
+        <div class="personal-info" id="about_me">
             <div class="profile__info">
                 <img class="profile__photo" src="assets/img/profile-pic.jpg" alt="profile photo" width="150">
                 <h1 class="profile__name title">
@@ -22,7 +62,16 @@
                     front-end developer
                 </p>
             </div>
-            <div class="contacts">
+            <div class="about-me">
+                <h2 class="title">
+                    about me
+                </h2>
+                <p class="text">
+                    I'm a cheerful girl 20 years old who likes programming, outdoor activities, team sports. Every day I
+                    try to learn something new.
+                </p>
+            </div>
+            <div class="contacts" id="contacts">
                 <h2 class="title">
                     contact info
                 </h2>
@@ -67,7 +116,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="education">
+            <div class="education" id="education">
                 <h2 class="title">
                     education
                 </h2>
@@ -96,7 +145,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="languages">
+            <div class="languages" id="knowledges">
                 <h2 class="title">
                     languages
                 </h2>
@@ -127,24 +176,15 @@
             </div>
         </div>
         <div class="professional-info">
-            <div class="about-me">
-                <h2 class="title">
-                    about me
-                </h2>
-                <p class="text">
-                    I'm a cheerful girl 20 years old who likes programming, outdoor activities, team sports. Every day I
-                    try to learn something new.
-                </p>
-            </div>
-            <div class="experience">
+                        <div class="experience" id="experience">
                 <h2 class="title experience__title">
                     experience
                 </h2>
                 <div class="experience__table">
                     <div class="experience__place">
                         <p class="text text_bold experience__place_text">
-                           <a href="https://rs.school/" class="link" target="_blank">
-                             RS-school
+                            <a href="https://rs.school/" class="link" target="_blank">
+                                RS-school
                             </a>
                         </p>
                     </div>
@@ -161,38 +201,43 @@
                             </p>
                         </div>
                         <div class="experience__project">
-                            <a href="https://valeriakliui.github.io/rs-school/" class="link subtitle subtitle_upper text_bold"
-                                target="_blank">
+                            <a href="https://valeriakliui.github.io/rs-school/"
+                                class="link subtitle subtitle_upper text_bold" target="_blank">
                                 travel portal
                             </a>
                             <p class="text">
-                                Travel website landing page. On the site you can read about the routes, look through the gallery.
+                                Travel website landing page. On the site you can read about the routes, look through the
+                                gallery.
                             </p>
                         </div>
                         <div class="experience__project">
-                                <a href="https://github.com/ValeriaKliui/game" class="link subtitle subtitle_upper text_bold" target="_blank">
-                                    gem puzzle game
-                                </a>
-                                <p class="text">
-                                    The game is a set of identical square tiles with marked numbers, enclosed in a square box. The goal of the game is to move the tiles around the box in order to arrange them by numbers, preferably by making as few moves as possible.
+                            <a href="https://github.com/ValeriaKliui/game"
+                                class="link subtitle subtitle_upper text_bold" target="_blank">
+                                gem puzzle game
+                            </a>
+                            <p class="text">
+                                The game is a set of identical square tiles with marked numbers, enclosed in a square
+                                box. The goal of the game is to move the tiles around the box in order to arrange them
+                                by numbers, preferably by making as few moves as possible.
                             </p>
                         </div>
                     </div>
                     <div class="experience__place">
                         <p class="text text_bold experience__place_text">
-                           <a href="https://www.bsuir.by/" class="link" target="_blank">
-                            BSUIR
-                        </a>
+                            <a href="https://www.bsuir.by/" class="link" target="_blank">
+                                BSUIR
+                            </a>
                         </p>
                     </div>
                     <div class="experience__projects">
                         <div class="experience__project">
-                            <a href="https://valeriakliui.github.io/Gallery-Site/index.html" class="link subtitle subtitle_upper text_bold"
-                            target="_blank">
-                            gallery
-                        </a>
+                            <a href="https://valeriakliui.github.io/Gallery-Site/index.html"
+                                class="link subtitle subtitle_upper text_bold" target="_blank">
+                                gallery
+                            </a>
                             <p class="text">
-                                Site for an art gallery with the ability to read news about the exhibition, information about the gallery.
+                                Site for an art gallery with the ability to read news about the exhibition, information
+                                about the gallery.
                             </p>
                         </div>
                     </div>
