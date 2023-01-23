@@ -3,6 +3,13 @@
     src: url("/assets/fonts/Segoe UI.ttf");
 }
 
+:root {
+--primaty-color: #6a4f57;
+--bright-color: #8c4f57;
+--light-color: #6a4f57a9;
+--the-lightest-color: #6a4f5739;
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -27,12 +34,17 @@ html {
     color: inherit;
 }
 
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 .resume-page {
     width: 60%;
     margin: 5% auto;
     padding: 50px;
-    box-shadow: 5px 5px 20px #6a4f57;
+    box-shadow: 5px 5px 20px var(--primaty-color);
     display: flex;
     gap: 8%;
 }
@@ -55,7 +67,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #6a4f57;
+    border-bottom: 1px solid var(--primaty-color);
     margin-bottom: 7px;
 }
 
@@ -76,7 +88,7 @@ html {
 
 .subtitle {
     font-size: 0.9em;
-    color: #8c4f57;
+    color: var(--bright-color);
 }
 .subtitle_upper {
     text-transform: uppercase;
@@ -95,7 +107,7 @@ html {
 
 .contacts__item {
     display: flex;
-    gap: .5rem;
+    gap: .5em;
     align-items: center;
 }
 
@@ -108,13 +120,13 @@ html {
 }
 
 .icon {
-    fill: #6a4f57a9;
+    fill: var(--light-color);
     transition: 0.2s all;
 }
 
 /* TODO: hover icons */
 .icon:hover {
-    fill: #6a4f57;
+    fill: var(--primaty-color);
 }
 
 .education__subtitle {
@@ -126,11 +138,11 @@ html {
 .status-bar {
     width: 50%;
     height: 7px;
-    background-color: #6a4f5739;
+    background-color: var(--the-lightest-color);
 }
 .status-bar__procents {
     height: 7px;
-    background-color: #6a4f57a9;
+    background-color: var(--light-color);
     display: block;
 }
 
