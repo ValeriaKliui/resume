@@ -1,6 +1,7 @@
 @font-face {
-    font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    src: url("/assets/fonts/Segoe UI.ttf");
+    font-family: "Bai-Jamure";
+    src: url('../assets/fonts/BaiJamjuree-Regular.ttf');
+    font-weight: 400;
 }
 
 :root {
@@ -8,14 +9,22 @@
 --bright-color: #8c4f57;
 --light-color: #6a4f57a9;
 --the-lightest-color: #6a4f5739;
+--background-color: #F2F1EF;
+
+--baze-font-size: 1em;
+--smaller-font-size: 0.9em;
+--bigger-font-size: 1.5em;
+--huge-font-size: 4em;
+
+--indent-bottom: 5%;
 }
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    font-family: "Segoe UI";
-    font-size: 1em;
+    font-family: "Bai-Jamure";
+    font-size: var(--baze-font-size);
 }
 
 *,
@@ -24,6 +33,9 @@ html {
     box-sizing: inherit;
 }
 
+.resume-page {
+    background-color: var(--background-color);
+}
 .list {
     list-style-type: none;
     padding-left: 0;
@@ -39,55 +51,54 @@ html {
     margin: 0 auto;
     padding: 0 20px;
 }
-
-.resume-page {
-    width: 60%;
-    margin: 5% auto;
-    padding: 50px;
-    box-shadow: 5px 5px 20px var(--primaty-color);
-    display: flex;
-    gap: 8%;
+.header {
+    margin-bottom: var(--indent-bottom);
 }
-
 .navigation__list {
     display: flex;
     justify-content: center;
 }
 .navigation__item + .navigation__item {
-    margin-left: 2%;
+    margin-left: 5%;
+}
+.navigation__link {
+    position: relative;
+}
+.navigation__link:after {
+	display: block;
+	position: absolute;
+    bottom: -3px;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: var(--primaty-color); 
+	content: "";
+	transition: width 0.3s ease-out; 
 }
 
-.personal-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.navigation__link:hover:after,
+.navigation__link:focus:after {
+	width: 100%; 
 }
 
-.profile__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid var(--primaty-color);
-    margin-bottom: 7px;
+
+.about-me__profession {
+    font-size: var(--bigger-font-size);
 }
 
-.profile__photo {
-    border-radius: 100px;
-}
-
-.profile__name,
-.profile__profession,
+.about-me__title,
+.about-me__profession,
 .title {
     text-transform: uppercase;
 }
 
 .title {
-    font-size: 1em;
+    font-size: var(--baze-font-size);
     margin: 5px 0;
 }
 
 .subtitle {
-    font-size: 0.9em;
+    font-size: var(--smaller-font-size);
     color: var(--bright-color);
 }
 .subtitle_upper {
@@ -99,12 +110,51 @@ html {
 .text_light {
     font-weight: 200;
 }
-
-.profile__name {
-    font-size: 1.2em;
-    font-weight: 600;
+.about-me__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+.about-me__title {
+    font-size: var(--huge-font-size);
+    font-weight: 400;
+}
+.typing {
+    border-right: 1px solid black;
+}
+.about-me__photo {
+    display: block;
+    border-radius: 50%;
+    padding: 6%;
+}
+.section_symbol {
+   padding: 4%;
+}
+.greeting {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+}
+.about-me__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15%;
+}
+.section_symbol {
+    display: block;
+}
+.slider {
+    display: flex;
+    align-items: center;
+}
+.arrow {
+    display: block;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
 .contacts__item {
     display: flex;
     gap: .5em;

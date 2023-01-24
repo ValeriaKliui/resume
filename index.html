@@ -10,67 +10,97 @@
     <title>Resume</title>
 </head>
 
-<body>
+<body class="resume-page">
     <header class="header">
-        <nav class="navigation">
-            <ul class="navigation__list list">
-                <li class="navigation__item">
-                    <p class="text">
-                        <a href="#about_me" class="link">
-                            About me
-                        </a>
-                    </p>
-                </li>
-                <li class="navigation__item">
-                    <p class="text">
-                        <a href="#contacts" class="link">
-                            Contacts
-                        </a>
-                    </p>
-                </li>
-                <li class="navigation__item">
-                    <p class="text">
-                        <a href="#education" class="link">
-                            Education
-                        </a>
-                    </p>
-                </li>
-                <li class="navigation__item">
-                    <p class="text">
-                        <a href="#knowledges" class="link">
-                            Knowledges </a>
-                    </p>
-                </li>
-                <li class="navigation__item">
-                    <p class="text">
-                        <a href="#experience" class="link">
-                            Experience
-                        </a>
-                    </p>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__item">
+                        <p class="text">
+                            <a href="#about_me" class="link navigation__link">
+                                About me
+                            </a>
+                        </p>
+                    </li>
+                    <li class="navigation__item">
+                        <p class="text">
+                            <a href="#contacts" class="link navigation__link">
+                                Contacts
+                            </a>
+                        </p>
+                    </li>
+                    <li class="navigation__item">
+                        <p class="text">
+                            <a href="#education" class="link navigation__link">
+                                Education
+                            </a>
+                        </p>
+                    </li>
+                    <li class="navigation__item">
+                        <p class="text">
+                            <a href="#knowledge" class="link navigation__link">
+                                Knowledge </a>
+                        </p>
+                    </li>
+                    <li class="navigation__item">
+                        <p class="text">
+                            <a href="#experience" class="link navigation__link">
+                                Experience
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <main>
+        <section class="about-me" id="about_me">
+            <div class="wrapper about-me__wrapper">
+                <div class="about-me__container">
+                    <div class="greeting">
+                        <h1 class="about-me__title title">
+                            Hi, i'm valeria kliui.
+                        </h1>
+                        <p class="text about-me__profession">
+                            front-end developer based in Minsk
+                        </p>
+                        <p class="text">
+                            I'm a cheerful girl 20 years old who likes programming, outdoor activities, team sports.
+                            Every
+                            day I
+                            try to learn something new.
+                        </p>
+                    </div>
+                    <!-- to make slider
+                to change arrows -->
+                    <div class="slider">
+                        <button class="arrow arrow-left">
+                            < </button>
+                                <img class="about-me__photo" src="assets/img/profile-pic01.jpg" alt="profile photo"
+                                    width="350">
+                                <button class="arrow arrow-right">
+                                    >
+                                </button>
+                    </div>
+                </div>
+                <object class="section_symbol" type="image/svg+xml" data="assets/img/icons/symbol.svg">
+                    Your browser does not support SVG
+                </object>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
     <div class="resume-page">
         <div class="personal-info" id="about_me">
-            <div class="profile__info">
-                <img class="profile__photo" src="assets/img/profile-pic.jpg" alt="profile photo" width="150">
-                <h1 class="profile__name title">
-                    valeria kliui
-                </h1>
-                <p class="text profile__profession">
-                    front-end developer
-                </p>
-            </div>
-            <div class="about-me">
-                <h2 class="title">
-                    about me
-                </h2>
-                <p class="text">
-                    I'm a cheerful girl 20 years old who likes programming, outdoor activities, team sports. Every day I
-                    try to learn something new.
-                </p>
-            </div>
+
+
             <div class="contacts" id="contacts">
                 <h2 class="title">
                     contact info
@@ -145,7 +175,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="languages" id="knowledges">
+            <div class="languages" id="knowledge">
                 <h2 class="title">
                     languages
                 </h2>
@@ -176,7 +206,7 @@
             </div>
         </div>
         <div class="professional-info">
-                        <div class="experience" id="experience">
+            <div class="experience" id="experience">
                 <h2 class="title experience__title">
                     experience
                 </h2>
@@ -245,8 +275,7 @@
             </div>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
-
-<script src="js/index.js"></script>
 
 </html>

@@ -17,3 +17,20 @@ function makeStatusBarProcent(lang) {
 }
 
 makeStatusBarProcent(languages);
+
+
+//typing letters
+let word = document.querySelector('.about-me__title');
+const wordText = word.innerText;
+let result = '';
+let seconds = 0;
+let timerId = setInterval(toStartTyping,'200');
+
+function toStartTyping() {
+    seconds++;
+    result = result+  `${wordText.charAt(seconds-1)}`;
+    word.classList.toggle('typing');
+    word.innerText = result;
+    if (wordText.length === result.length) clearInterval(timerId); 
+}
+
