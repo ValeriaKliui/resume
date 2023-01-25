@@ -72,10 +72,8 @@
                             try to learn something new.
                         </p>
                     </div>
-                    <!-- to make slider
-                to change arrows -->
                     <div class="slider">
-                        <button class="arrow arrow-left">
+                        <button class="arrow arrow-left disabled">
                             < </button>
                                 <img class="about-me__photo" src="assets/img/profile-pic01.jpg" alt="profile photo"
                                     width="350">
@@ -87,39 +85,39 @@
             </div>
             <div class="section_line">
                 <div class="section_line__container">
-                <ul class="section_line__list list">
-                    <li class="section_line__item">
-                       <p class="section_line__text subtitle subtitle_upper">
-                         20 years
-                        </p>
-                    </li>
-                    <li class="section_line__item">
-                        <p class="section_line__text subtitle subtitle_upper">
-                            bsuir
-                           </p>   
-                    </li>
-                    <li class="section_line__item">
-                        <p class="section_line__text subtitle subtitle_upper">
-                            minsk
-                           </p>   
-                    </li>
-                    <li class="section_line__item">
-                        <p class="section_line__text subtitle subtitle_upper">
-                            html
-                           </p>   
-                    </li>
-                    <li class="section_line__item">
-                        <p class="section_line__text subtitle subtitle_upper">
-                            css
-                           </p>   
-                    </li>
-                    <li class="section_line__item">
-                        <p class="section_line__text subtitle subtitle_upper">
-                            js
-                           </p>   
-                    </li>
-                </ul>
-            </div>
+                    <ul class="section_line__list list">
+                        <li class="section_line__item">
+                            <p class="section_line__text subtitle subtitle_upper">
+                                20 years
+                            </p>
+                        </li>
+                        <li class="section_line__item">
+                            <p class="section_line__text subtitle subtitle_upper">
+                                bsuir
+                            </p>
+                        </li>
+                        <li class="section_line__item">
+                            <p class="section_line__text subtitle subtitle_upper">
+                                minsk
+                            </p>
+                        </li>
+                        <li class="section_line__item">
+                            <p class="section_line__text subtitle subtitle_upper">
+                                html
+                            </p>
+                        </li>
+                        <li class="section_line__item">
+                            <p class="section_line__text subtitle subtitle_upper">
+                                css
+                            </p>
+                        </li>
+                        <li class="section_line__item">
+                            <p class="section_line__text subtitle subtitle_upper">
+                                js
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -133,9 +131,9 @@
                         <object type="image/svg+xml" data="assets/img/icons/calendar.svg">
                             Your browser does not support SVG
                         </object>
-                            <p class="text contacts__text text_light">
-                               14.03.2002
-                            </p>
+                        <p class="text contacts__text text_light">
+                            14.03.2002
+                        </p>
                     </li>
                     <li class="contacts__item">
                         <object type="image/svg+xml" data="assets/img/icons/phone-icon.svg">
@@ -179,144 +177,217 @@
             </div>
         </section>
 
-
-
-
-
-    </main>
-    <div class="resume-page">
-        <div class="personal-info" id="about_me">
-    
-            <div class="education" id="education">
-                <h2 class="title">
+        <section class="education" id="education">
+            <div class="wrapper">
+                <h2 class="title education__title">
                     education
                 </h2>
-                <ul class="education__list list">
-                    <li class="education__item">
-                        <h3 class="subtitle education__subtitle">
-                            2022-present
-                        </h3>
-                        <p class="text text_bold education__text">
-                            Self-education, learning programming.
-                        </p>
-                        <p class="text text_light education__text">
-                            Online course of RS-School (stage1).
-                        </p>
-                    </li>
-                    <li class="education__item">
-                        <h3 class="subtitle education__subtitle">
-                            2019-2023
-                        </h3>
-                        <p class="text text_bold education__text">
-                            The Economics of E-Commerce
-                        </p>
-                        <p class="text text_light education__text">
-                            Belarusian State University of Informatics and Radioelectronics (BSUIR)
-                        </p>
-                    </li>
-                </ul>
+                <div class="education__container">
+                    <div class="education__item">
+                        <div class="education__place">
+                            <div class="numeration">
+                                <p class="text">
+                                    2
+                                </p>
+                            </div>
+                            <div class="education__place_info">
+                                <p class="text text_bold education__text">
+                                    Self-education, learning programming
+                                </p>
+                                <p class="text text_light education__text">
+                                    Online course of RS-School (stage1)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education__year">
+                            <h3 class="subtitle education__subtitle subtitle_upper">
+                                2022 — present
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="education__item">
+                        <div class="education__place">
+                            <div class="numeration">
+                                <p class="text">
+                                    1
+                                </p>
+                            </div>
+                            <div class="education__place_info">
+                                <p class="text text_bold education__text">
+                                    The Economics of E-Commerce
+                                </p>
+                                <p class="text text_light education__text">
+                                    Belarusian State University of Informatics and Radioelectronics (BSUIR)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education__year">
+                            <h3 class="subtitle education__subtitle subtitle_upper">
+                                2019 — 2023
+                            </h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="languages" id="knowledge">
-                <h2 class="title">
+        </section>
+
+        <section class="knowledge" id="knowledge">
+            <div class="wrapper knowledge__wrapper">
+                <h2 class="title knowledge__title">
                     languages
                 </h2>
-                <div class="language">
-                    <p class="text">
-                        English — B1
-                    </p>
-                    <div class="status-bar">
-                        <div class="status-bar__procents english"></div>
+                <div class="languages">
+                    <div class="language">
+                        <p class="text">
+                            English — B1
+                        </p>
+                        <div class="status-bar">
+                            <div class="status-bar__procents english"></div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <p class="text">
+                            Russian
+                        </p>
+                        <div class="status-bar">
+                            <div class="status-bar__procents russian"></div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <p class="text">
+                            Belorussian — native
+                        </p>
+                        <div class="status-bar">
+                            <div class="status-bar__procents belorussian"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="language">
-                    <p class="text">
-                        Russian
-                    </p>
-                    <div class="status-bar">
-                        <div class="status-bar__procents russian"></div>
+                <h2 class="title knowledge__title">
+                    knowledge of
+                </h2>
+                <div class="knowledges">
+                    <div class="knowledges__item">
+                        <p class="text">
+                            html
+                        </p>
                     </div>
-                </div>
-                <div class="language">
-                    <p class="text">
-                        Belorussian — native
-                    </p>
-                    <div class="status-bar">
-                        <div class="status-bar__procents belorussian"></div>
+                    <div class="knowledges__item">
+                        <p class="text">
+                            css
+                        </p>
+                    </div>
+                    <div class="knowledges__item">
+                        <p class="text">
+                            javascript
+                        </p>
+                    </div>
+                    <div class="knowledges__item">
+                        <p class="text">
+                            git
+                        </p>
+                    </div>
+                    <div class="knowledges__item">
+                        <p class="text">
+                            webpack
+                        </p>
+                    </div>
+                    <div class="knowledges__item">
+                        <p class="text">
+                            php
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="professional-info">
-            <div class="experience" id="experience">
+            <img src="assets/img/icons/symbol.svg" alt="" class="symbol symbol_left">
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="wrapper">
                 <h2 class="title experience__title">
                     experience
                 </h2>
-                <div class="experience__table">
-                    <div class="experience__place">
-                        <p class="text text_bold experience__place_text">
+                <div class="experience_projects">
+                    <div class="project__photo">
+                        <img src="assets/img/projects/zoo.jpg" alt="" class="project__photo">
+                    </div>
+                    <div class="project__text">
+                        <a href="https://valeriakliui.github.io/zoo/pages/main/index.html"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">
+                            zoo
+                        </a>
+                        <p class="text">
+                            Online-zoo is a platform that collects information about animals from various zoos.
+                            It is assumed that the user can open a page with zoo resources, read about animals or
+                            make a donation, which will be used to purchase food.
+                        </p>
+                        <p class="text text_light">
                             <a href="https://rs.school/" class="link" target="_blank">
                                 RS-school
                             </a>
                         </p>
                     </div>
-                    <div class="experience__projects">
-                        <div class="experience__project">
-                            <a href="https://valeriakliui.github.io/zoo/pages/main/index.html"
-                                class="link subtitle subtitle_upper text_bold" target="_blank">
-                                zoo
-                            </a>
-                            <p class="text">
-                                Online-zoo is a platform that collects information about animals from various zoos.
-                                It is assumed that the user can open a page with zoo resources, read about animals or
-                                make a donation, which will be used to purchase food.
-                            </p>
-                        </div>
-                        <div class="experience__project">
-                            <a href="https://valeriakliui.github.io/rs-school/"
-                                class="link subtitle subtitle_upper text_bold" target="_blank">
-                                travel portal
-                            </a>
-                            <p class="text">
-                                Travel website landing page. On the site you can read about the routes, look through the
-                                gallery.
-                            </p>
-                        </div>
-                        <div class="experience__project">
-                            <a href="https://github.com/ValeriaKliui/game"
-                                class="link subtitle subtitle_upper text_bold" target="_blank">
-                                gem puzzle game
-                            </a>
-                            <p class="text">
-                                The game is a set of identical square tiles with marked numbers, enclosed in a square
-                                box. The goal of the game is to move the tiles around the box in order to arrange them
-                                by numbers, preferably by making as few moves as possible.
-                            </p>
-                        </div>
+                    <div class="project__text">
+                        <a href="https://valeriakliui.github.io/calendar/pages/index.html"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">
+                            calendar
+                        </a>
+                        <p class="text">
+                            Calendar is a web-app, where you can authorize and add your plans to the calendar. Then
+                            watch your plans in the account.
+                        </p>
+                        <p class="text text_light">
+                            To authorize use <span class="highlight">login</span> = Admin, <span
+                                class="highlight">password</span> = 12345678.
+                        </p>
                     </div>
-                    <div class="experience__place">
-                        <p class="text text_bold experience__place_text">
-                            <a href="https://www.bsuir.by/" class="link" target="_blank">
-                                BSUIR
+                    <div class="project__photo">
+                        <img src="assets/img/projects/calendar.jpg" alt="" class="project__photo">
+                    </div>
+                    <div class="project__photo">
+                        <img src="assets/img/projects/travel.jpg" alt="" class="project__photo">
+                    </div>
+                    <div class="project__text">
+                        <a href="https://valeriakliui.github.io/Travel-portal/"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">
+                            Travel portal
+                        </a>
+                        <p class="text">
+                            Online-zoo is a platform that collects information about animals from various zoos.
+                            It is assumed that the user can open a page with zoo resources, read about animals or
+                            make a donation, which will be used to purchase food.
+                        </p>
+                        <p class="text text_light">
+                            <a href="https://rs.school/" class="link" target="_blank">
+                                RS-school
                             </a>
                         </p>
                     </div>
-                    <div class="experience__projects">
-                        <div class="experience__project">
-                            <a href="https://valeriakliui.github.io/Gallery-Site/index.html"
-                                class="link subtitle subtitle_upper text_bold" target="_blank">
-                                gallery
+                    <div class="project__text">
+                        <a href="https://github.com/ValeriaKliui/game"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">
+                            gem puzzle game
+                        </a>
+                        <p class="text">
+                            The game is a set of identical square tiles with marked numbers, enclosed in a
+                                    square
+                                    box. The goal of the game is to move the tiles around the box in order to arrange
+                                    them
+                                    by numbers, preferably by making as few moves as possible.
+                        </p>
+                        <p class="text text_light">
+                            <a href="https://rs.school/" class="link" target="_blank">
+                                RS-school
                             </a>
-                            <p class="text">
-                                Site for an art gallery with the ability to read news about the exhibition, information
-                                about the gallery.
-                            </p>
-                        </div>
+                        </p>
+                    </div>
+                    <div class="project__photo">
+                        <img src="assets/img/projects/game.jpg" alt="" class="project__photo">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <script src="js/index.js"></script>
+        </section>
+    </main>
+        <script src="js/index.js"></script>
 </body>
 
 </html>
