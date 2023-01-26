@@ -42,21 +42,21 @@ const photo = document.querySelector('.about-me__photo');
 let counter = 0;
 function changePhoto() {
     const gallery = ['profile-pic01.jpg', 'profile-pic02.jpeg', 'profile-pic03.jpg'];
+    const photosAmount = gallery.length;
     if (this.classList.contains('arrow-right')) counter++;
     else counter--;
-    if (counter>=gallery.length) counter = gallery.length -1;
+    if (counter>=photosAmount) counter = photosAmount -1;
     if (counter<=0) counter = 0;
     photo.src= `assets/img/${gallery[counter]}`;
-    changeArrow.call(this, gallery);
+    changeArrow.call(this, photosAmount);
 }
 
-function changeArrow(gallery) {
-    console.log(this);
-    if (counter === gallery.length -1 || counter===0) {
+function changeArrow(photosAmount) {
+    if (counter === photosAmount -1 || counter===0) {
         this.classList.add('disabled');
     }
     if (counter > 0) arrowLeft.classList.remove('disabled');
-    if (counter < gallery.length - 1) arrowRight.classList.remove('disabled');
+    if (counter < photosAmount - 1) arrowRight.classList.remove('disabled');
 }
 
 arrowRight.addEventListener('click', changePhoto);
