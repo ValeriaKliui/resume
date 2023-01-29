@@ -4,13 +4,13 @@ const languages = ["english", "russian", "belorussian"];
 
 function makeStatusBarProcent(lang) {
     for (const statusBar of statusBars) {
-       if (statusBar.classList.contains(lang[0])) {
+       if (statusBar.matches(`.${lang[0]}`)) {
         statusBar.style.width = "70%"
        }
-       else if (statusBar.classList.contains(lang[1])) {
+       else if (statusBar.matches(`.${lang[1]}`)) {
         statusBar.style.width = "90%"
        }
-       else if (statusBar.classList.contains(lang[2])) {
+       else if (statusBar.matches(`.${lang[2]}`)) {
         statusBar.style.width = "80%"
        }
     }
@@ -43,7 +43,7 @@ let counter = 0;
 function changePhoto() {
     const gallery = ['profile-pic01.jpg', 'profile-pic02.jpeg', 'profile-pic03.jpg'];
     const photosAmount = gallery.length;
-    if (this.classList.contains('arrow-right')) counter++;
+    if (this.matches('.arrow-right')) counter++;
     else counter--;
     if (counter>=photosAmount) counter = photosAmount -1;
     if (counter<=0) counter = 0;
@@ -70,14 +70,13 @@ const header = document.querySelector('.header');
 let shadow = document.createElement('div');
 
 makeMobileNav();
-
 window.onresize = function () {
     makeMobileNav();
 }
 document.body.addEventListener('click', showMenu);
 
 function showMenu(event) {
-    if (event.target.closest('.burger')|| (document.body.classList.contains('stop-scroll')) ) {
+    if (event.target.closest('.burger')|| (document.body.matches('.stop-scroll')) ) {
 header.append(navigationDesktop);
 document.body.prepend(shadow);
 
@@ -88,7 +87,6 @@ burger.classList.toggle('close');
 shadow.classList.toggle('shadow');
     }
 }
-
 
 function makeMobileNav() {
     let browserWidth = document.body.clientWidth;
@@ -101,3 +99,4 @@ function makeMobileNav() {
         burger.classList.add('hidden');
     }
 }
+
