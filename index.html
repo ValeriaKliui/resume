@@ -12,8 +12,8 @@
 
 <body class="resume-page">
     <header class="header">
-        <div class="wrapper">
-            <nav class="navigation">
+        <div class="wrapper header__wrapper">
+            <nav class="navigation navigation_desktop">
                 <ul class="navigation__list list">
                     <li class="navigation__item">
                         <p class="text">
@@ -51,6 +51,11 @@
                     </li>
                 </ul>
             </nav>
+            <div class="burger hidden">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </div>
         </div>
     </header>
 
@@ -76,8 +81,6 @@
                         <button class="arrow arrow-left disabled">
                             < </button>
                                 <img class="about-me__photo" src="assets/img/profile-pic01.jpg" alt="profile photo">
-                                <img class="about-me__photo hidden" src="assets/img/profile-pic02.jpeg" alt="profile photo">
-                                <img class="about-me__photo hidden" src="assets/img/profile-pic03.jpg" alt="profile photo">
                                 <button class="arrow arrow-right">
                                     >
                                 </button>
@@ -308,10 +311,13 @@
                     experience
                 </h2>
                 <div class="experience_projects">
-                    <div class="project__photo">
-                        <img src="assets/img/projects/zoo.jpg" alt="" class="project__photo">
-                    </div>
-                    <div class="project__text">
+                        <div class="project__photo first_elem">
+                            <a href="https://valeriakliui.github.io/zoo/pages/main/index.html"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">    
+                            <img src="assets/img/projects/zoo.jpg" alt="" class="project__photo">
+                            </a>
+                        </div>
+                    <div class="project__text second_elem">
                         <a href="https://valeriakliui.github.io/zoo/pages/main/index.html"
                             class="link subtitle subtitle_upper text_bold" target="_blank">
                             zoo
@@ -327,7 +333,13 @@
                             </a>
                         </p>
                     </div>
-                    <div class="project__text">
+                        <div class="project__photo third_elem">
+                            <a href="https://valeriakliui.github.io/calendar/pages/index.html"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">    
+                            <img src="assets/img/projects/calendar.jpg" alt="" class="project__photo">
+                            </a>
+                        </div>
+                    <div class="project__text fourth_elem">
                         <a href="https://valeriakliui.github.io/calendar/pages/index.html"
                             class="link subtitle subtitle_upper text_bold" target="_blank">
                             calendar
@@ -341,13 +353,13 @@
                                 class="highlight">password</span> = 12345678.
                         </p>
                     </div>
-                    <div class="project__photo">
-                        <img src="assets/img/projects/calendar.jpg" alt="" class="project__photo">
-                    </div>
-                    <div class="project__photo">
-                        <img src="assets/img/projects/travel.jpg" alt="" class="project__photo">
-                    </div>
-                    <div class="project__text">
+                        <div class="project__photo fifth_elem">
+                            <a href="https://valeriakliui.github.io/Travel-portal/"
+                            class="link subtitle subtitle_upper text_bold" target="_blank">    
+                            <img src="assets/img/projects/travel.jpg" alt="" class="project__photo">
+                            </a>
+                        </div>
+                    <div class="project__text sixth_elem">
                         <a href="https://valeriakliui.github.io/Travel-portal/"
                             class="link subtitle subtitle_upper text_bold" target="_blank">
                             Travel portal
@@ -363,17 +375,23 @@
                             </a>
                         </p>
                     </div>
-                    <div class="project__text">
-                        <a href="https://github.com/ValeriaKliui/game"
-                            class="link subtitle subtitle_upper text_bold" target="_blank">
+                        <div class="project__photo seventh_elem">
+                            <a href="https://github.com/ValeriaKliui/game" class="link subtitle subtitle_upper text_bold"
+                            target="_blank">    
+                            <img src="assets/img/projects/game.jpg" alt="" class="project__photo">
+                       </a>
+                        </div>
+                    <div class="project__text eighth_elem">
+                        <a href="https://github.com/ValeriaKliui/game" class="link subtitle subtitle_upper text_bold"
+                            target="_blank">
                             gem puzzle game
                         </a>
                         <p class="text">
                             The game is a set of identical square tiles with marked numbers, enclosed in a
-                                    square
-                                    box. The goal of the game is to move the tiles around the box in order to arrange
-                                    them
-                                    by numbers, preferably by making as few moves as possible.
+                            square
+                            box. The goal of the game is to move the tiles around the box in order to arrange
+                            them
+                            by numbers, preferably by making as few moves as possible.
                         </p>
                         <p class="text text_light">
                             <a href="https://rs.school/" class="link" target="_blank">
@@ -381,14 +399,23 @@
                             </a>
                         </p>
                     </div>
-                    <div class="project__photo">
-                        <img src="assets/img/projects/game.jpg" alt="" class="project__photo">
-                    </div>
                 </div>
             </div>
         </section>
     </main>
-        <script src="js/index.js"></script>
+    <footer class="footer">
+        <div class="wrapper footer__wrapper">
+            <a href="https://github.com/ValeriaKliui" target="_blank" class="link">
+                <h3 class="subtitle_upper">
+                    valeria kliui
+                </h3>
+            </a>
+            <p class="text">
+                +375 29 322 15 86
+            </p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

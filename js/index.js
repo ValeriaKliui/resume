@@ -61,3 +61,43 @@ function changeArrow(photosAmount) {
 
 arrowRight.addEventListener('click', changePhoto);
 arrowLeft.addEventListener('click', changePhoto);
+
+
+//burger 
+const burger = document.querySelector('.burger');
+const navigationDesktop = document.querySelector('.navigation_desktop');
+const header = document.querySelector('.header');
+let shadow = document.createElement('div');
+
+makeMobileNav();
+
+window.onresize = function () {
+    makeMobileNav();
+}
+document.body.addEventListener('click', showMenu);
+
+function showMenu(event) {
+    if (event.target.closest('.burger')|| (document.body.classList.contains('stop-scroll')) ) {
+header.append(navigationDesktop);
+document.body.prepend(shadow);
+
+navigationDesktop.classList.toggle('menu__mobile');
+navigationDesktop.classList.toggle('hidden');
+document.body.classList.toggle('stop-scroll');
+burger.classList.toggle('close');
+shadow.classList.toggle('shadow');
+    }
+}
+
+
+function makeMobileNav() {
+    let browserWidth = document.body.clientWidth;
+    if (browserWidth <= 640) {
+        navigationDesktop.classList.add('hidden');
+        burger.classList.remove('hidden');
+    }
+    else {
+        navigationDesktop.classList.remove('hidden');
+        burger.classList.add('hidden');
+    }
+}
